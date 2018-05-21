@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio opcional</title>
+  </head>
+  <style media="screen">
+    body{
+      margin: 0;
+    }
+    .clearfix{
+      clear: both;
+    }
+    .contenedor{
+      font-family: Arial, Helvetica, sans-serif;
+      width: 80%;
+      margin-left: 10%;
+    }
+    .contenedor div{
+      box-sizing: border-box;
+    }
+    h1{
+      font-weight: normal;
+    }
+    .titulo{
+      width: 100%;
+      background-color: black;
+      color: white;
+      padding: 20px 20px 10px 20px
+    }
+    .titulo h1{
+      margin: 0;
+    }
+    .region-izquierda,.region-derecha{
+      float: left;
+      padding: 0 15px;
+      width: 100%
+    }
+    .region-izquierda{
+      width: 30%;
+      background-color: rgb(221, 221, 221);
+    }
+    .region-derecha{
+      width: 70%;
+    }
+    .pie{
+      color: white;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      background-color: rgb(130, 130, 130);
+    }
+  </style>
+  <body>
+    <div class="contenedor">
+      <div class="titulo">
+        <h1>Título página</h1>
+      </div>
+      <div class="contenido">
+        <div class="region-izquierda">
+          <h1>Menú</h1>
+          <ul>
+            <li><a href="#">Item-1</a></li>
+            <li><a href="#">Item-2</a></li>
+            <li><a href="#">Item-3</a></li>
+            <li><a href="#">Item-4</a></li>
+            <li><a href="#">Item-5</a></li>
+          </ul>
+        </div>
+        <div class="region-derecha">
+          <h1>Sub-título</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="pie">
+        © Todos los derechos reservados
+      </div>
+    </div>
+  </body>
+</html>
