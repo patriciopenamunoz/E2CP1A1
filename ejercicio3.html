@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Banderas CSS</title>
+    <style media="screen">
+      .clearfix{
+        clear: both;
+      }
+
+      .bandera{
+        width: 300px;
+        margin: 20px 10px;
+        float: left;
+      }
+      .bandera .dibujo{
+        box-sizing: border-box;
+        border: solid 1px rgb(205, 205, 205);
+        height: 200px;
+        overflow: hidden;
+      }
+      .bandera .dibujo,.bandera .dibujo div{
+        width: 100%;
+      }
+
+      /* ESPAÑA */
+      #spain .franja-roja{
+        height: 55px;
+        background-color: rgb(255, 28, 28);
+      }
+      #spain .franja-amarilla{
+        height: 90px;
+        background-color: rgb(255, 208, 43);
+      }
+
+      /* DINAMARCA */
+      #dinamarca .dibujo{
+        background-color: white;
+      }
+      #dinamarca .bloque-rojo, #dinamarca .franja-roja{
+        background-color: rgb(255, 28, 28);
+        float: left;
+      }
+      #dinamarca .bloque-rojo{
+        height: 90px;
+        width: 90px;
+      }
+      #dinamarca .separacion{
+        padding-bottom: 20px;
+      }
+      #dinamarca .franja-roja{
+        width: 188px;
+        height: 90px;
+        margin-left: 20px;
+      }
+
+      /* EMIRATOS ÁRABES */
+      #emiratos .region-izquierda, #emiratos .region-derecha{
+        float: left;
+        height: 100%;
+      }
+      #emiratos .region-izquierda{
+        width: 70px;
+        background-color: rgb(255, 28, 28);
+      }
+      #emiratos .region-derecha{
+        width: calc(100% - 70px);
+      }
+      #emiratos .region-derecha>div{
+        height: calc(100% / 3);
+      }
+      #emiratos .franja-verde{
+        background-color: rgb(24, 84, 0);
+      }
+      #emiratos .franja-blanca{
+        background-color: white;
+      }
+      #emiratos .franja-negra{
+        background-color: black;
+      }
+
+      /* JAPÓN */
+      #japon .dibujo{
+        background-color: white;
+      }
+      #japon .circulo-rojo{
+        background-color: rgb(255, 28, 28);
+        height: 80px;
+        width: 80px;
+        margin: 20% auto;
+        border-radius: 100%
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ESPAÑA -->
+    <div id="spain" class="bandera">
+      <div class="dibujo">
+        <div class="franja-roja"></div>
+        <div class="franja-amarilla"></div>
+        <div class="franja-roja"></div>
+      </div>
+      <p>España</p>
+    </div>
+
+    <!-- DINAMARCA -->
+    <div id="dinamarca" class="bandera">
+      <div class="dibujo">
+        <div class="bloque-rojo"></div>
+        <div class="franja-roja"></div>
+        <div class="separacion clearfix"></div>
+        <div class="bloque-rojo"></div>
+        <div class="franja-roja"></div>
+      </div>
+      <p>Dinamarca</p>
+    </div>
+
+    <!-- EMIRATOS ÁRABES -->
+    <div id="emiratos" class="bandera">
+      <div class="dibujo">
+        <div class="region-izquierda"></div>
+        <div class="region-derecha">
+          <div class="franja-verde"></div>
+          <div class="franja-blanca"></div>
+          <div class="franja-negra"></div>
+        </div>
+      </div>
+      <p>Emiratos Árabes</p>
+    </div>
+
+    <!-- JAPÓN -->
+    <div id="japon" class="bandera">
+      <div class="dibujo">
+        <div class="circulo-rojo"></div>
+      </div>
+      <p>Japón</p>
+    </div>
+  </body>
+</html>
